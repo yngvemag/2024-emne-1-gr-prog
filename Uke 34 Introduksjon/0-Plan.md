@@ -65,6 +65,19 @@ Vi utforsker ulike datatyper i Python:
   - **Float:** Desimaltall, f.eks. `3.14`
 - **Boolean:** Representerer sannhetsverdier, `True` eller `False`.
 
+### Casting 
+Vi kan endre datatypen på variabler/data
+
+#### Regne-operasjoner
+- \+ (addere)
+- \- (substrahere) 
+- \/ (divisjon)
+- \* (multiplisere) 
+- \// (heltall-divisjon)
+- \% (modulus, rest)
+- \** (exponent)
+
+
 ### Betingelser
 
 En introduksjon til betingede utsagn i Python ved hjelp av `if`, `elif`, og `else`-setninger. Vi ser på hvordan man kan styre programflyten basert på ulike betingelser.
