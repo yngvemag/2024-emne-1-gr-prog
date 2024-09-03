@@ -30,13 +30,23 @@ import random as rnd
 # 1. Vi må bestemme et tall som pc-gjetter.
 min_nr: int = 1
 max_nr: int = 100
-my_number: int = int(input("Hvilke tall skal pc gjette: "))
 
-# while True:
-    # safe_str_nr = input("Skal pc gjette: ")
-    # safe_str_nr.isdigit() -> True/False
-    # hvis det bare er tall -> Trykt å caste til int -> avslutt
-    # hvis ikke prøv igjen !!!
+# Denne er utrygg da det smeller om de skriver 'ajl3'
+# my_number: int = int(input("Hvilke tall skal pc gjette: "))
+my_number: int = 0
+# innlesing av tall !!
+while True:
+    safe_str_nr = input("Skal pc gjette: ")
+    if not safe_str_nr.isdigit():
+        continue
+
+    # det er trykt å gjøre om string til int !!
+    my_number = int(safe_str_nr)
+
+    # må vi sjekk max_nr og min_nr !!! Sikre at input er innefor max/min range
+    if min_nr <= my_number <= max_nr:
+        break
+
 
 # 2. Vi må la pc-gjette på tallet vårt helt til den får riktig
 #   - Det innebærer en løkke (while-løkke)
