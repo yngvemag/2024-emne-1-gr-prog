@@ -1,4 +1,6 @@
 #%%
+array_liste = []
+
 names_group_one: list[str] = ['Yngve', 'Ola', 'Kari']
 age_group_one: list[int] = [51, 40, 20]
 list_mixed: list = [1, 2, "Yngve", True, 4.67]
