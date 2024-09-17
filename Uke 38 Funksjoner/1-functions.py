@@ -58,3 +58,35 @@ def str_compare(str1: str, str2: str) -> bool:
     #if str1 == str2:
     #    return True
     #return False
+
+
+# Skriv en funksjon som tar en streng (en setning) som parameter
+# og returnerer antall ord i setningen.
+# Plan:
+#   1. Navn: 'get_word_count' / 'count_word'
+#   2. Parameter: tekst/linje f.eks. 'hei og hå' -> type: str
+#   3. Return: Telle antall ord i setning og returnere svaret -> type 'int'
+def get_word_count(line: str) -> int:
+    # text = 'hei og hå 1 2 3'
+    # ('hei', 'og', 'hå', '1', '2', '3') = text.split()
+    return len(line.split())  # splitter på space
+
+
+# test:
+print(get_word_count('Hello World 1 2 3'))
+
+# Skriv en funksjon som tar radiusen til en sirkel som parameter
+# og returnerer sirkelens omkrets.
+# Plan:
+#   1. navn: 'circle_circumference'
+#   2. parameter: vi trenger radiusen til sirkelen -> type: 'float'
+#   3. return: omkretsen: 2 * pi * radius
+#   4. import 'pi' from 'math' module
+from math import pi
+
+
+def circle_circumference(radius: float) -> float:
+    return 2 * pi * radius
+
+
+print(f'Circle circumference radius=7 ={circle_circumference(7)}')
