@@ -25,5 +25,5 @@ list_names_upper_case = [name.upper() for name in list_names]
 print(list_names_upper_case)
 
 # lage gangetabellen
-multiplication_table = [f'{a}*{b}={a*b}'  for a in range(1, 11) for b in range(1, 11) ]
+multiplication_table = [f'{a}*{b}={a*b}' for a in range(1, 11) for b in range(1, 11)]
 print(multiplication_table)
