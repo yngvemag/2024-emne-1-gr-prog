@@ -41,3 +41,16 @@ def set_players_ready(players: list[turtle.Turtle],
         player.setheading(0)  # se mot høyre
         player.goto(x, y)
         y -= 300
+
+def write_results(t : turtle.Turtle,
+                  result_list: list[turtle.Turtle],
+                  pos: tuple[int, int]) -> None:
+    t.penup()
+    t.goto(pos[0], pos[1])
+    t.write("RESULTATLISTE:")
+    x, y = pos
+    y -= 20 # justere ned før vi starter med spiller
+    for idx, p in enumerate(result_list):
+        t.goto(x, y)
+        t.write(f'{idx+1}: {p.color()[0]}')
+        y -= 20
