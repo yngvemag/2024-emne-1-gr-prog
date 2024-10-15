@@ -1,0 +1,17 @@
+1. Lage subfolder 'files'
+2. lage 100 tilfeldige filer med følgende struktur i subfolder 'files'
+    YYYY-MM.txt -> Eks. 2015-12.txt
+    Tips: må bruke random
+        - random år mellom 2015 og 2023
+        - random månded mellom 1 og 12
+        - bruke f'' string for lage filnavn -> eks. '2015-12.txt'
+        - bruke 'open' funksjon for å lage filer (trenger ikke skrive til filen)
+
+3. Sortere disse filene i egne mapper
+    - sjekk om 'files' mappen finnes
+    - hvis den finnes bruk os.chdir() funksjone til å endre path til denne mappen
+    - list alle filer som ligger i mappen
+    - for hver av filene gjør følgende:
+        1. Må hente ut år og måned informasjon fra filen. "2015-03.txt"
+        2. Lage sub-directory med år og måned hvis den ikke eksisterer
+        3. flytte filen in i denne mappen
