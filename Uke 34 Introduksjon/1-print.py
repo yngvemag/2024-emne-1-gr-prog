@@ -1,6 +1,6 @@
 # Print: Innebygd funksjon i python
 
-print("Hello World")
+print("Hello World 2")
 print(55)
 
 print("Hello", 100, "Hei")
@@ -14,3 +14,5 @@ på flere linjer.
 
 # f-string (format string)
 print(f'Jeg heter yngve og er {50+1} år')
+
+input()
